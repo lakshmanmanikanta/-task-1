@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task_1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            background-color: lightgray;
+        }
+
+        .navbar {
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        .navbar-brand {
+            margin: 0;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar-nav .nav-item {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .custom-img {
+            width: 100px; /* Set your desired width */
+            height: 100px; /* Set your desired height */
+            border-radius: 50%;
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            object-position: top left; /* Align to top left corner */
+        }
+
+        .image-heading-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .headings {
+            margin-left: 10px; /* Adjust as needed */
+        }
+
+        .ram, .lakshman, .sita ,.hanum{
+            height: 40px;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            text-align: center;
+            width: 100%;
+            max-width: 150px;
+            margin: 5px auto;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 50px;
+        }
+
+        .card ul li::before {
+            content: "\2022"; /* Unicode bullet character */
+            color: green; /* Change bullet color to green */
+            font-size: 1.5em; /* Increase bullet size */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .ram {
+            background-color: skyblue;
+        }
+
+        .lakshman {
+            background-color: red;
+        }
+
+        .sita {
+            background-color: red;
+        }
+        .hanum{
+            background-color: lawngreen;
+        }
+        .y{
+            position: relative;
+            left: 60px;
+            top:20px;
+            font-size: 25px;
+
+        }
+        .o{
+            position: relative;
+            left: 30px;
+        }
+        .s{
+            position: relative;
+            left: 130px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="hanum">Preview</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="ram">AWARDS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="ram">SONGS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="ram">Download</button>
+                    </li>
+                    <li class="nav-item">
+                        <select class="lakshman">
+                            <option>Actions</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <!-- First Row with Two Cards -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/14796868-60803c6b7f5792/profile_public_big.jpg" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                
+                                <h4 class="y"><b>User Doe</b></h4>
+                                <h6 class="y"><b>UX Designer</b></h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul class="o">
+                            <li>
+                               <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                                 <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                                 <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/14796868-60803c6b7f5792/profile_public_big.jpg" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4 class="y"><b>User Doe</b></h4>
+                                <h6 class="y"><b>UX Designer</b></h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul class="o">
+                            <li>
+                               <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                                <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                               <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/14796868-60803c6b7f5792/profile_public_big.jpg" class="card-img-top custom-img" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4 class="y"><b>User Doe</b></h4>
+                                <h6 class="y"><b>UX Designer</b></h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul class="o">
+                            <li>
+                               <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                               <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                             <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/14796868-60803c6b7f5792/profile_public_big.jpg" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4 class="y"><b>User Doe</b></h4>
+                                <h6 class="y"><b>UX Desginer</b></h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul class="o">
+                            <li>
+                                <b>Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                              <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                            <li>
+                             <b> Anton Knudsen</b><span class="s">14MAY</span>
+                                <p>Lorem ipsum is dolorem...</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
